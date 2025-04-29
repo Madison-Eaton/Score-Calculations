@@ -1,28 +1,48 @@
+
 #all necessary numbers
 score_1=input("Enter Score 1 here: ")
 weight_1=input("Enter score 1 weight here: ")
 
-agg_score_1=(int(score_1)*(int(weight_1)*.01))
+agg_score_1=(float(score_1)*(float(weight_1)*.01))
+
+print("-----------")
+
 #aggregated score for indvidual criteria
 score_2=input("Enter Score 2 here: ")
 weight_2=input("Enter Score 2 weight here: ")
 
-agg_score_2=(int(score_2)*(int(weight_2)*.01))
+agg_score_2=(float(score_2)*(float(weight_2)*.01))
+
+print("-----------")
 
 score_3=input("Enter Score 3 here: ")
 weight_3=input("Enter Score 3 weight here: ")
 
-agg_score_3=(int(score_3)*(int(weight_3)*.01))
+agg_score_3=(float(score_3)*(float(weight_3)*.01))
 
+print("-----------")
 
+weight_4=(float(weight_1)+float(weight_2)+float(weight_3))
 
-weight_4=input("What percentage of your grade is the final worth?)
+act_weight_4=(100-float(weight_4))
 
-avg_goal_score=input("What is the your desired final score?")
+#--------------
+
+avg_goal_score=input("What is the your desired final score? ")
 
 #actual math down here
 
+print("-----------")
 
-req_final_grade=((int(avg_goal_score)-(agg_score_1+agg_score_2+agg_score_3))/int(weight_4))
+sub_factor=(agg_score_1+agg_score_2+agg_score_3)
+req_final_score=(float(avg_goal_score)-float(sub_factor))
+mult_weight_4=(float(act_weight_4)*.01)
+real_final=(float(req_final_score)/float(mult_weight_4))
 
-print("The grade you need on the final in order to achieve a "+str(avg_goal_score)+" % is "+str(req_final_grade)")
+
+#Christ on a cucumber that got convoluted fast
+
+print("You need a "+str(real_final)+" % on the final")
+print("in order to get a "+str(avg_goal_score)+" % in the class")
+                   
+
