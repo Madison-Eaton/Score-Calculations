@@ -1,0 +1,28 @@
+#all necessary numbers
+score_1=input("Enter Score 1 here: ")
+weight_1=input("Enter score 1 weight here: ")
+
+agg_score_1=(int(score_1)*(int(weight_1)*.01))
+#aggregated score for indvidual criteria
+score_2=input("Enter Score 2 here: ")
+weight_2=input("Enter Score 2 weight here: ")
+
+agg_score_2=(int(score_2)*(int(weight_2)*.01))
+
+score_3=input("Enter Score 3 here: ")
+weight_3=input("Enter Score 3 weight here: ")
+
+agg_score_3=(int(score_3)*(int(weight_3)*.01))
+
+
+
+weight_4=input("What percentage of your grade is the final worth?)
+
+avg_goal_score=input("What is the your desired final score?")
+
+#actual math down here
+
+
+req_final_grade=((int(avg_goal_score)-(agg_score_1+agg_score_2+agg_score_3))/int(weight_4))
+
+print("The grade you need on the final in order to achieve a "+str(avg_goal_score)+" % is "+str(req_final_grade)")
