@@ -2,7 +2,12 @@ essay_grade=input("Enter Essay Grade here: ")
 project_grade=input("Enter Project Grade here: ")
   
 avg_score_unk=(int(essay_grade)+int(project_grade))/2
+
+
 q4_grade=((int(avg_score_unk)*.6)+(100*.4))
-print("Quarter 4 Grade: " + q4grade)
+
+print("Quarter 4 Grade: " +str(q4_grade))
+
 final_grade=(98+int(q4_grade))/2  
-print("Final Grade for Second Semester is :" + final_grade)
+
+print("Final Grade for Second Semester is :" + str(final_grade))
