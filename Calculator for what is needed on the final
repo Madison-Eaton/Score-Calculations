@@ -1,4 +1,5 @@
 
+
 #all necessary numbers
 score_1=input("Enter Score 1 here: ")
 weight_1=input("Enter score 1 weight here: ")
@@ -42,7 +43,6 @@ real_final=(float(req_final_score)/float(mult_weight_4))
 
 #Christ on a cucumber that got convoluted fast
 
-print("You need a "+str(real_final)+" % on the final")
-print("in order to get a "+str(avg_goal_score)+" % in the class")
+print("You need a "+str(real_final)+"% or a "+(str(round(real_final,2)))+"%")
+print("on the final in order to get a "+str(avg_goal_score)+"% in the class")
                    
-
